@@ -6,3 +6,42 @@ rild.libpath=/system/lib/libril-qc-qmi-1.so
 ro.vendor.extension_library=/system/lib/libqc-opt.so
 ro.telephony.default_network=9
 telephony.lteOnGsmDevice=1
+
+#
+# HyperDroidAOXP tweaks
+#
+
+#Tweaks
+windowsmgr.max_events_per_sec=240
+
+#Network Tweaks
+wifi.supplicant_scan_interval=300
+
+#Disable checkin services, error reporting and logging
+ro.config.nocheckin=1
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
+dalvik.vm.verify-bytecode=false
+dalvik.vm.dexopt-flags=v=n,o=v,m=y
+
+#GPU settings
+debug.composition.type=dyn
+debug.egl.hw=1
+debug.mdpcomp.logs=0
+debug.sf.hw=1
+persist.hwc.mdpcomp.enable=true
+debug.mdpcomp.maxlayer=3
+ro.hwui.renderer.disable_opaque=true
+debug.enabletr=true
+
+#Save Battery Power Tweak
+ro.ril.disable.power.collapse=0
+pm.sleep_mode=1
+ro.config.hw_power_saving=true
+persist.sys.shutdown.mode=hibernate
+
+#
+# End of HyperDroidAOXP tweaks
+#
