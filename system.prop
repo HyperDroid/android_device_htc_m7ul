@@ -35,6 +35,7 @@ persist.hwc.mdpcomp.enable=true
 debug.mdpcomp.maxlayer=3
 ro.hwui.renderer.disable_opaque=true
 debug.enabletr=true
+debug.hwc.dynThreshold=1.9
 
 #Save Battery Power Tweak
 ro.ril.disable.power.collapse=0
