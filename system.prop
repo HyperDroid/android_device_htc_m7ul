@@ -27,14 +27,14 @@ dalvik.vm.verify-bytecode=false
 dalvik.vm.dexopt-flags=v=n,o=v,m=y
 
 #GPU settings
-debug.composition.type=dyn
-debug.egl.hw=1
-debug.mdpcomp.logs=0
 debug.sf.hw=1
+debug.egl.hw=1
+debug.composition.type=gpu
+debug.enabletr=true
+ro.hwui.renderer.disable_opaque=true
 persist.hwc.mdpcomp.enable=true
 debug.mdpcomp.maxlayer=3
-ro.hwui.renderer.disable_opaque=true
-debug.enabletr=true
+debug.egl.buffcount=4
 debug.hwc.dynThreshold=1.9
 
 #Save Battery Power Tweak
