@@ -25,6 +25,7 @@ ro.kernel.android.checkjni=0
 ro.kernel.checkjni=0
 dalvik.vm.verify-bytecode=false
 dalvik.vm.dexopt-flags=v=n,o=v,m=y
+dalvik.vm.debug.alloc=0
 
 #GPU settings
 debug.sf.hw=1
