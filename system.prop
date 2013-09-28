@@ -26,17 +26,24 @@ ro.kernel.checkjni=0
 dalvik.vm.verify-bytecode=false
 dalvik.vm.dexopt-flags=v=n,o=v,m=y
 dalvik.vm.debug.alloc=0
+dalvik.vm.execution-mode=int:jit
 
 #GPU settings
 debug.sf.hw=1
 debug.egl.hw=1
 debug.composition.type=gpu
-debug.enabletr=true
-ro.hwui.renderer.disable_opaque=true
-persist.hwc.mdpcomp.enable=true
-debug.mdpcomp.maxlayer=3
-debug.egl.buffcount=4
+persist.sys.ui.hw=true
 debug.hwc.dynThreshold=1.9
+
+#AUDIO settings
+persist.audio.fluence.mode=endfire
+persist.audio.vr.enable=false
+persist.audio.handset.mic=digital
+persist.audio.speaker.location=high
+media.aac_51_output_enabled=true
+ro.qc.sdk.audio.fluencetype=fluence
+af.resampler.quality=255
+
 
 #Save Battery Power Tweak
 ro.ril.disable.power.collapse=0
